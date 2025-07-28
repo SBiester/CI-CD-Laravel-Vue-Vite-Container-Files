@@ -42,4 +42,4 @@ COPY /Setup-Files/script.sh /usr/local/bin/script.sh
 RUN chmod +x /usr/local/bin/script.sh
 
 # Ausführen des Startskripts
-ENTRYPOINT [ "/usr/local/bin/start.sh" ]
+ENTRYPOINT [ "/usr/local/bin/script.sh" ]
