@@ -12,7 +12,7 @@ ARG NODE_VERSION=22
 # Arbeitsverzeichnis
 WORKDIR /var/www/frontend
 # COPY /Setup-Files/id_ed25519 /root/.ssh/id_ed25519
-RUN chmod 600 /root/.ssh/id_ed25519
+# RUN chmod 600 /root/.ssh/id_ed25519
 
 # Systempakete und Tools für PHP und MySQL installieren
 RUN apt-get update && apt-get install -y \
