@@ -15,6 +15,7 @@ services:
     
     volumes:
       - ./Project-Files:/var/www/frontend
+      - ./Setup-Files/.ssh:/root/.ssh
       - node_modules:/var/www/frontend/node_modules
     
     working_dir: /var/www/frontend
