@@ -5,7 +5,7 @@ services:
     
     build:
       context: ./
-      dockerfile: ./Setup-Files/DOCKERFILE
+      dockerfile: /Setup-Files/DOCKERFILE
       args:
         NODE_VERSION: 22
     
@@ -14,8 +14,7 @@ services:
     restart: always
     
     volumes:
-      - ./Project-Files:/var/www/frontend
-      - ./Setup-Files/.ssh:/root/.ssh
+      - /Project-Files:/var/www/frontend
       - node_modules:/var/www/frontend/node_modules
     
     working_dir: /var/www/frontend
